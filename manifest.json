@@ -1,0 +1,24 @@
+{"dir" : "ltr",
+    "lang" : "en-US",
+    "name" : "Trendy Monster",
+    "scope" : "/",
+    "display" : "Standalone",
+    "start_url" : "https://www.trendymonster.com/",
+    "short_name" : "Trendy Monster",
+    "theme_color" : "transparent",
+    "description" : "we create the trends join the adventure ",
+    "orientation" : "any",
+    "background_color" : "transparent",
+    "related_applications" : "",
+    "prefer_related_applications" : "false",
+    "url" : "https://www.trendymonster.com",
+    "icons" : [
+        {
+            "src": "https://cdn.shopify.com/s/files/1/2653/9092/files/192image.jpg?11013383246388714384",
+            "sizes": "192x192"
+        },
+        {
+            "src": "https://cdn.shopify.com/s/files/1/2653/9092/files/512image_76d9ee8d-d563-4170-8b2f-34436255fb86.jpg?11380491581672434389",
+            "sizes": "512x512"
+        }
+    ]}
