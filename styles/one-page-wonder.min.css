@@ -1,8 +1,31 @@
-/*!
- * Start Bootstrap - One Page Wonder v5.0.1 (https://startbootstrap.com/template-overviews/one-page-wonder)
- * Copyright 2013-2018 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/blob/master/LICENSE)
- */
+
+/*Theme Colors*/
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+}
+
+
+
 body {
   font-family: Lato;
 }
@@ -51,6 +74,13 @@ h6 {
   font-weight: 700;
   letter-spacing: 0.1rem;
 }
+
+button.navbar-toggler {
+  outline: none;
+  border:none;
+}
+
+
 
 /*Header Hero*/
 header.masthead {

@@ -1,3 +1,9 @@
+
+//import Firebase
+importScripts('https://www.gstatic.com/firebasejs/5.0.0/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/5.0.0/firebase-messaging.js');
+
+
 //This is the "Offline copy of pages" service worker
 
 //Install stage sets up the index page (home page) in the cache and opens a new cache
@@ -31,6 +37,11 @@ self.addEventListener('install', function(event) {
         });
       });
     };
+
+
+    //============================================================================================================//
+     //UPDATE THE CACHE
+   //============================================================================================================//
   
     event.waitUntil(updateCache(event.request));
   
@@ -51,3 +62,33 @@ self.addEventListener('install', function(event) {
     );
   })
   
+
+  //============================================================================================================//
+     //FIREBASE PUSH MESSAGES
+   //============================================================================================================//
+
+  var config = {
+    apiKey: "AIzaSyD2p6lWVTEbneI2gm6aheeHjTFRQdBdN2o",
+    authDomain: "progressive-apps-builder.firebaseapp.com",
+    databaseURL: "https://progressive-apps-builder.firebaseio.com",
+    projectId: "progressive-apps-builder",
+    storageBucket: "progressive-apps-builder.appspot.com",
+    messagingSenderId: "692054876427"
+  };
+firebase.initializeApp(config);
+
+var messaging = firebase.messaging();
+
+messaging.setBackgroundMessageHandler(function(payload) {
+  console.log('[firebase-messaging-sw.js] Received background message ', payload);
+  // Customize notification here
+  var notificationTitle = payload.data.title;
+  var notificationOptions = {
+    body: payload.data.body,
+    icon: payload.data.icon
+  };
+
+  return self.registration.showNotification(notificationTitle,
+    notificationOptions);
+});
+// [END background_handler]

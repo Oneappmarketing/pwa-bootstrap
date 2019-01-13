@@ -7,5 +7,5 @@
 *Caching all  Images and files*/
 */https://www.favicon-generator.org/*/
 
-*Add a splash Screen*/
+*Add a splash Screen Done*/
 
