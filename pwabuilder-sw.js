@@ -66,14 +66,14 @@ self.addEventListener('install', function(event) {
   //============================================================================================================//
      //FIREBASE PUSH MESSAGES
    //============================================================================================================//
-
+//Change Keys
   var config = {
-    apiKey: "AIzaSyD2p6lWVTEbneI2gm6aheeHjTFRQdBdN2o",
+    apiKey: "",
     authDomain: "progressive-apps-builder.firebaseapp.com",
     databaseURL: "https://progressive-apps-builder.firebaseio.com",
     projectId: "progressive-apps-builder",
     storageBucket: "progressive-apps-builder.appspot.com",
-    messagingSenderId: "692054876427"
+    messagingSenderId: ""
   };
 firebase.initializeApp(config);
 
